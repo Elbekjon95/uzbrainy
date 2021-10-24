@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body class="login">
+    <div class="header">
+        <div class="container">
+
+            <div class="menu">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                    <a class="navbar-brand" href="#">Navbar <img class="logo__img"
+                            src="img/546ec123-4cce-488e-a453-814852eb3486_1000x1000.jpg" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Savollar arxivi
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Matematika</a>
+                                    <a class="dropdown-item" href="#">Ingiliz tili</a>
+
+
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Olimpiada g'oliblari
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Matematika</a>
+                                    <a class="dropdown-item" href="#">Ingiliz tili</a>
+
+
+                                </div>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Yangiliklar <span class="sr-only"></span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Kirish <span class="sr-only"></span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Ro'yxatdan o'tish <span class="sr-only"></span></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="h-screen xl:h-auto flex py-5 xl:py-0 my-10 xl:my-0">
+        <div
+            class="my-auto mx-auto xl:ml-20 bg-white xl:bg-transparent px-5 sm:px-8 py-8 xl:p-0 rounded-md shadow-md xl:shadow-none w-full sm:w-3/4 lg:w-2/4 xl:w-auto">
+            <form action="" method="post">
+                <input type="hidden" name="_token" value="bnhRhkRzgrKXLxslcFdEa7O7CcXHdnarICszptIW">
+                <h2 class="intro-x font-bold text-2xl xl:text-3xl text-center xl:text-left">
+                    Roʻyxatdan oʻtish
+                </h2>
+                <div class="intro-x mt-8">
+                    <input type="text" class="intro-x login__input input input--lg border border-gray-300 block"
+                        placeholder="Ism" name="firstname" required="" value="">
+                    <input type="text" class="intro-x login__input input input--lg border border-gray-300 block mt-4"
+                        placeholder="Familiya" name="lastname" required="" value="">
+                    <input type="number" class="intro-x login__input input input--lg border border-gray-300 block mt-4"
+                        placeholder="Telefon" name="phone" required="" value="">
+                    <input type="text" class="intro-x login__input input input--lg border border-gray-300 block mt-4"
+                        placeholder="Login" name="login" required="" value="" />
+                    <input type="password"
+                        class="intro-x login__input input input--lg border border-gray-300 block mt-4"
+                        placeholder="Parol" name="password" required="" value="">
+                    <select class="intro-x login__input input input--lg border border-gray-300 block mt-4"
+                        name="region_id" required="" onchange="editSubregion(this.value)" value="">
+                        <option value="">-- Viloyatni tanlang --</option>
+                        <option value="1">Андижон вилояти</option>
+                        <option value="2">Бухоро вилояти</option>
+                        <option value="3">Жиззах вилояти</option>
+                        <option value="4">Қашқадарё вилояти</option>
+                        <option value="5">Навоий вилояти</option>
+                        <option value="6">Наманган вилояти</option>
+                        <option value="7">Самарқанд вилояти</option>
+                        <option value="8">Сурхондарё вилояти</option>
+                        <option value="9">Сирдарё вилояти</option>
+                        <option value="10">Тошкент шаҳар</option>
+                        <option value="11">Тошкент вилояти</option>
+                        <option value="12">Фарғона вилояти</option>
+                        <option value="13">Хоразм вилояти</option>
+                        <option value="14">Қорақалпоғистон Респ.</option>
+                    </select>
+                    <select class="intro-x login__input input input--lg border border-gray-300 block mt-4"
+                        name="sub_region_id" id="sub_region_id" required="" value="">
+                        <option value="1">-- Tumanni tanlang --</option>
+                    </select>
+                    <select class="intro-x login__input input input--lg border border-gray-300 block mt-4" name="class"
+                        id="class" value="">
+                        <option value=""> -- Sinfni tanlang -- </option>
+                        <option value="1"> 1 - sinf </option>
+                        <option value="2"> 2 - sinf</option>
+                        <option value="3"> 3 - sinf</option>
+                        <option value="4"> 4 - sinf</option>
+                        <option value="5"> 5 - sinf</option>
+                        <option value="6"> 6 - sinf</option>
+                        <option value="7"> 7 - sinf</option>
+                        <option value="8"> 8 - sinf</option>
+                        <option value="9"> 9 - sinf</option>
+                        <option value="10"> 10 - sinf</option>
+                        <option value="11"> 11 - sinf</option>
+                    </select>
+                    <input type="text" class="intro-x login__input input input--lg border border-gray-300 block mt-4"
+                        placeholder="Ta&#039;lim muassasi / Tashkilot " name="organization" required="" value="">
+                </div>
+                <div class="intro-x flex items-center text-gray-700 mt-4 text-xs sm:text-sm">
+                    <input type="checkbox" class="input border mr-2" id="remember-me" required="">
+                    <label class="cursor-pointer select-none" for="remember-me">Sayt qoidalariga amal qilishga
+                        roziman.</label>
+                    <a class="text-theme-1 ml-1" href="">Qoidalar</a>
+                </div>
+                <div class="intro-x mt-5 xl:mt-8 text-center xl:text-left">
+                    <button type="submit"
+                        class="button button--lg w-full xl:w-40 text-white bg-theme-1 xl:mr-3">Roʻyxatdan
+                        oʻtish</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+    
+
+
+
+    <script src="js/app.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
